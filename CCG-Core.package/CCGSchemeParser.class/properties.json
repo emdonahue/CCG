@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CCGParser",
+	"category" : "CCG-Core-CCG-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CCGSchemeParser",
+	"type" : "normal"
+}
