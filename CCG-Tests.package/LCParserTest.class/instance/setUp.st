@@ -1,3 +1,3 @@
 initialization
 setUp
-	parser := LCParser new.
+	parser := LeftCornerParser new.

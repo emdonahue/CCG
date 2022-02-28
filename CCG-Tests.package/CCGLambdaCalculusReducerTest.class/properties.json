@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "CCG-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"reducer",
+		"r"
+	],
+	"name" : "CCGLambdaCalculusReducerTest",
+	"type" : "normal"
+}

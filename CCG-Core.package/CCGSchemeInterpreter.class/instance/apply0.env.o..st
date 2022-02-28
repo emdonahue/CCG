@@ -1,7 +1,7 @@
 as yet unclassified
 apply0: anExpr env: anEnv o: aVal
 	^ anExpr
-		match: #((lambda0 (?) ?) ?)
+		match: #((lambda0 (_) _) _)
 		o: [ :param :body :rand | 
 			[ :arg |
 			 (self eval: rand env: anEnv o: arg)

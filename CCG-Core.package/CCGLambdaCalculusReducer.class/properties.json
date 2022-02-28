@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LCParser",
+	"name" : "CCGLambdaCalculusReducer",
 	"type" : "normal"
 }

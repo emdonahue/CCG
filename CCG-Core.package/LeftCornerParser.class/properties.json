@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "EvanDonahue 3/1/2022 05:58",
+	"super" : "Object",
+	"category" : "CCG-Core-CCG-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LeftCornerParser",
+	"type" : "normal"
+}
