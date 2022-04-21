@@ -1,9 +1,15 @@
 accessing - delegated
 apply: anExpr env: anEnv o: aVal
-		^ (anExpr match: #(_ _) o: [ :rator :rands :closure |
-			{(closure car: #closure list: 3 o: [ :env :args :body :vals :ext | 
+		^ anExpr match: #(_ _) o: [ :rator :rand :lambda |
+			{ self eval: rator env: anEnv o: lambda.
+			lambda match: #(lambda _ _) o: [ :arg :body :val |
+				{ self eval: rand env: anEnv o: val.
+				self eval: body env: ((arg cons: val) cons: anEnv) o: aVal}
+				 ] }
+		].
+"		{(lambda match: #(lambda _ _) o: [ :arg :body :vals :ext | 
 				{self eval: body env: ext o: aVal. 
 					self extend: ext env: env args: args vals: vals.
 					self eval: rands env: anEnv o: vals. } ]) tag: #apply_closure.
-			self eval: rator env: anEnv o: closure. } ]) tag: #apply.
+			self eval: rator env: anEnv o: closure. } ]) tag: #apply."
 	
