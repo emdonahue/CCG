@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "CCG-Core",
+	"super" : "TestCase",
+	"category" : "CCG-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "CCGSchemeInterpreter",
+	"instvars" : [
+		"i"
+	],
+	"name" : "CCGInducerTest",
 	"type" : "normal"
 }
