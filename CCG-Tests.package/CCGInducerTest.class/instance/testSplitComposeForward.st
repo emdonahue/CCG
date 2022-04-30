@@ -1,4 +1,6 @@
 running
 testSplitComposeForward
-	"self assert:" [ :syn1 :syn2 :sem1 :sem2 :sem | i splitComposeForwardSyntax: #(A/C) asConsTree left: syn1 right: syn2 semantics: sem asConsTree left: sem1 right: sem2 ] asGoal run first asOrderedCollection  inspect.
-	"asSet equals: #(((the) (good cat)) ((the good) (cat))) asConsTree asSet."
+
+	self assert: [ :x | i splitComposeForward: x left: #((A / B) good) asConsTree right: #((B / C) cat) asConsTree ] asGoal run caar equals: #((A / C) (lambda x (good (cat (var x))))) asConsTree.
+	self assert: [ :x | i splitComposeForward: #((A / C) (lambda x (good (cat (var x))))) asConsTree left: x right: #((B / C) cat) asConsTree ] asGoal run caar equals: #((A / B) good) asConsTree.
+	self assert: [ :x | i splitComposeForward: #((A / C) (lambda x (good (cat (var x))))) asConsTree left: #((A / B) good) asConsTree right: x ] asGoal run caar equals: #((B / C) cat) asConsTree.
