@@ -6,4 +6,4 @@ testApplyForwardso
 			parser apply: ((#N cons: #/ cons: (#N cons: x) cons) 
 					cons: (#lambda cons: x cons)) 
 				forwards: (#N cons: #arg)  o: o ] ] asGoal run
-		equals: #(((#N lambda arg))) asConsTree.
+		equals: #(((#N lambda arg))) asConsR.

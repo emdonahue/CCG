@@ -9,4 +9,4 @@ testParse1243
 				strIn: ((2 cons: 2) cons: (3 cons: 3) cons: ((4 cons: #\ cons: (3 cons: z) cons) cons: (z cons: 4 cons)) cons)
 				parseOut: pOut
 				strOut: Cons empty ] ] asGoal run
-		equals: #(#(#(1 #(1 2) #(3 4)))) asConsTree.	"((1 2) (3 4))"
+		equals: #(#(#(1 #(1 2) #(3 4)))) asConsR.	"((1 2) (3 4))"

@@ -18,4 +18,4 @@ testStudent
 			twice := (#N cons: #/ cons: (#N cons: x4) cons) cons: (#* cons: 2 cons: x4 cons).
 			bobs := (#N cons: #/ cons: (#N cons: x1) cons) cons: (#bobs cons: x1).	"N/N : (bobs X)"
 			parser parse: (alices cons: age cons: is cons: (one cons: less cons: than cons: (twice cons: bobs cons: age cons))) top: #S o: parse ] ] asGoal run
-		equals: #(#(#(#= #(#alices #age) #(#+ #(#- 1) #(#* 2 #(#bobs #age)))))) asConsTree 
+		equals: #(#(#(#= #(#alices #age) #(#+ #(#- 1) #(#* 2 #(#bobs #age)))))) asConsR 

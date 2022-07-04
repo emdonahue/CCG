@@ -1,3 +1,3 @@
 tests
 testAtom
-	self assert: (r eval: #x asConsTree) equals: #x.
+	self assert: (r eval: #x asConsR) equals: #x.
