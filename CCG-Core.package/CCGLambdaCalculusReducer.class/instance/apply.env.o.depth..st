@@ -10,6 +10,6 @@ apply: anExpr env: anEnv o: aVal depth: depth
 				op match: #(var _) o: [ :v | aVal === anExpr ].
 				"Simple Predicate"
 				{op isSymbolo. op =/= #var. op =/= #lambda. 
-					[ :body | {self predicateBody: rands env: anEnv o: body depth: depth. aVal === (op cons: body)} ]}
+					[ :body | {self predicateBody: rands env: anEnv o: body depth: depth. aVal === (op cons: body)}]}.
 				} conde}].
 	
