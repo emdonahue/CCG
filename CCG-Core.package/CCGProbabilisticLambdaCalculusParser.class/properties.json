@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CCGLambdaCalculusParser",
+	"category" : "CCG-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CCGProbabilisticLambdaCalculusParser",
+	"type" : "normal"
+}
