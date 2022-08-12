@@ -1,3 +1,3 @@
 initialization
 setUp
-	parser := LeftCornerParser new.
+	parser := CCGLeftCornerParser new.

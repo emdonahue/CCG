@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LeftCornerParser",
+	"name" : "CCGLeftCornerParser",
 	"type" : "normal"
 }
