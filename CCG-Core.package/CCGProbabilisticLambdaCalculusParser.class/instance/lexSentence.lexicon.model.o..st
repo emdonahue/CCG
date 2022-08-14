@@ -1,7 +1,9 @@
 as yet unclassified
 lexSentence: aSentence lexicon: aLexicon model: aModel o: aLex
 	^ {{aSentence isEmptyo. aLex isEmptyo}.
-		aSentence carCdro: [ :a :d | 
-			aLex carCdro: [ :a2 :d2 |
-				{self lexWord: a lexicon: aLexicon model: aModel o: a2.
-				self lexSentence: d lexicon: aLexicon model: aModel o: d2}]]} conde.
+		[ :mwe :sent |
+			{mwe =/= Cons empty.
+			mwe append: sent o: aSentence.
+			aLex carCdro: [ :lexeme :lex |
+				{self lexWord: mwe lexicon: aLexicon model: aModel o: lexeme.
+				self lexSentence: sent lexicon: aLexicon model: aModel o: lex}]}]} conde.
