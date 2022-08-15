@@ -1,5 +1,5 @@
-as yet unclassified
+combining
 splitApplyForward: synsem left: left right: right
-	^ { synsem. left. right } match: #((_1 _) ((_1 / _2) _) (_2 _)) o: [ :syn :sem :rsyn :lsem :rsem |
-			interpreter apply: lsem to: rsem o: sem.
+	^ { synsem. left. right } match: #((_syn _) ((_syn / _rsyn) _) (_rsyn _)) o: [ :syn :sem :rsyn :lsem :rsem |
+			interpreter apply: lsem to: rsem o: sem
 		].

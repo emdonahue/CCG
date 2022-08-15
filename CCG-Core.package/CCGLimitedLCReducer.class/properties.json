@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CCGLambdaCalculusReducer",
+	"category" : "CCG-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CCGLimitedLCReducer",
+	"type" : "normal"
+}

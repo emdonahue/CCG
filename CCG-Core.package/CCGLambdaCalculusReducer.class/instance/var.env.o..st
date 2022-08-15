@@ -1,4 +1,4 @@
-accessing - delegated
+interpreter
 var: anExpr env: anEnv o: aVal 	
 	^ anExpr match: #(var _) o: [ :var |
 		{var isSymbolo.

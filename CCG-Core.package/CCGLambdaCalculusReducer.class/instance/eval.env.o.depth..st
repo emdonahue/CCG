@@ -1,4 +1,4 @@
-accessing - delegated
+eval
 eval: anExpr env: anEnv o: aVal depth: depth
 	depth = 0 ifTrue: [ ^ SKGoal fail ].
 	^ {self atom: anExpr o: aVal.

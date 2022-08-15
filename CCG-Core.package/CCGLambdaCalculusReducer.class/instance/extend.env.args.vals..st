@@ -1,4 +1,4 @@
-accessing - delegated
+interpreter
 extend: newEnv env: oldEnv args: theArgs vals: theVals
 	<todo> "Good candidate for multi-term-matching"
 	^ (newEnv carCdrResto: [ :var :val :env |

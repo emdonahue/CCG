@@ -1,4 +1,4 @@
-accessing - delegated
+interpreter
 walk: aVar env: anEnv o: aVal
 		^ (anEnv carCdrResto: [ :var :val :env | "Lookup"
 		{{ aVar === var. aVal ===  val }.

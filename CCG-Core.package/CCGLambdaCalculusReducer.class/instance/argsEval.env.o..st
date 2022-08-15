@@ -1,4 +1,4 @@
-accessing - delegated
+interpreter
 argsEval: someArgs env: anEnv o: someVals
 	^ {{ someArgs isEmptyo. someVals isEmptyo }.
 		(someVals carCdro: [ :val :vals |
