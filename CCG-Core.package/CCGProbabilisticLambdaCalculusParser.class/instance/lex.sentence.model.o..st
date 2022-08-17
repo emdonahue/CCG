@@ -8,4 +8,5 @@ lex: aFullLex sentence: aSentence model: aModel o: aLex
 				aFullLex carCdro: [ :fulllexeme :fulllex |
 				{self lexWord: mwe model: aModel o: lexeme.
 				fulllexeme === (mwe cons: lexeme).
+				aModel sample: fulllexeme.
 				self lex: fulllex sentence: sent model: aModel o: lex}]]}]} conde.
