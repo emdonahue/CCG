@@ -1,4 +1,4 @@
 test
 testElementaryLexemesO
 
-	[ :o | CCGInducer new elementaryLexemes: #((cats are good) S (are cats good)) asConsR o: o ] asGoal runtime inspect
+	[ :o | CCGInducer new elementaryLexemes: #((good cat) S (good cat)) asConsR o: o ] asGoal runtime inspect
