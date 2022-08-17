@@ -1,6 +1,7 @@
 combining
 apply: left forwards: right o: out
 
-	^ {left. right} match: #((_ (_ / _1) _) (_ _1 _)) o: [ :word1 :synout :synin :lambda :word2 :arg | 
+	^ {left. right. out} match: #(((_ / _1) _) (_1 _)) o: [ :synout :synin :lambda :arg :reduced | 
 		{synin === #N.
-		CCGLimitedLCReducer new apply: lambda to: arg o: out} ].
+		out === (synout cons: reduced cons).
+		CCGLimitedLCReducer new apply: lambda to: arg o: reduced} ].
