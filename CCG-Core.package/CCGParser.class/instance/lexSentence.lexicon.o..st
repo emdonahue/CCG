@@ -1,5 +1,6 @@
 parsing
 lexSentence: aSentence lexicon: aLexicon o: aLex
+	self halt.
 	^ {{aSentence isEmptyo. aLex isEmptyo}.
 		aSentence carCdro: [ :a :d | 
 			{{a isPairo. aLex === (a cons: #N cons: a cons). false}.
