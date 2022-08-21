@@ -6,5 +6,5 @@ lambda: anExpr env: anEnv o: aVal depth: depth
 	^ {anExpr. aVal} match: {{#lambda. #_varname. #_body}. {#lambda. #_varname. #_beta}} o: [ :varname :body :beta |
 		"Shadow the lambda's argument before evaluating so that it evaluates to its own (var _) call, to prevent it from calling shadowed vars."
 		{"body presento: (#var cons: varname cons)."
-		"body presento: varname."
+		body presento: varname.
 		self lambdaEval: body env: ((varname cons: (#var cons: varname cons)) cons: anEnv) o: beta depth: depth - 1} ].
