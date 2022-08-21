@@ -1,4 +1,4 @@
-as yet unclassified
+lexing
 lexWord: aWord lexicon: aLexicon model: aModel o: aLexeme
 	^ aLexicon carCdro: [ :lexentry :lexicon | 
 		lexentry carCdro: [ :word :lexeme |
