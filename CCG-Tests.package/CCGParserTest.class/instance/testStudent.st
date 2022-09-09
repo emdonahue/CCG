@@ -17,5 +17,5 @@ testStudent
 			than := ((#N cons: #\ cons: (#N cons: x5) cons) cons: #/ cons: (#N cons: x6) cons) cons: (#+ cons: x5 cons: x6 cons).	"(N\N)/N : (+ X Y)"
 			twice := (#N cons: #/ cons: (#N cons: x4) cons) cons: (#* cons: 2 cons: x4 cons).
 			bobs := (#N cons: #/ cons: (#N cons: x1) cons) cons: (#bobs cons: x1).	"N/N : (bobs X)"
-			parser parse: (alices cons: age cons: is cons: (one cons: less cons: than cons: (twice cons: bobs cons: age cons))) top: #S o: parse ] ] asGoal run
+			parser parse: (alices cons: age cons: is cons: (one cons: less cons: than cons: (twice cons: bobs cons: age cons))) top: #S o: parse ] ] asGoal runList
 		equals: #(#(#(#= #(#alices #age) #(#+ #(#- 1) #(#* 2 #(#bobs #age)))))) asConsR 

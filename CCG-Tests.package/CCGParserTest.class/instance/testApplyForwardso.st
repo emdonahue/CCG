@@ -5,5 +5,5 @@ testApplyForwardso
 		[ :x | 
 			parser apply: ((#N cons: #/ cons: (#N cons: x) cons) 
 					cons: (#lambda cons: x cons)) 
-				forwards: (#N cons: #arg)  o: o ] ] asGoal run
+				forwards: (#N cons: #arg)  o: o ] ] asGoal runList
 		equals: #(((#N lambda arg))) asConsR.

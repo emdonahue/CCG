@@ -7,5 +7,5 @@ testParseTop
 			parser
 				parse: (((2 cons: #/ cons: (1 cons: x) cons) cons: (x cons: 2 cons)) cons:
 				 (1 cons: 1) cons: ((3 cons: #\ cons: (2 cons: y) cons) cons: (y cons: 3 cons)) cons)
-				top: 3 o: parse ] ] asGoal run
+				top: 3 o: parse ] ] asGoal runList
 		equals: #(#(#(#(1 2) 3))) asConsR.	"((1 2) 3)"

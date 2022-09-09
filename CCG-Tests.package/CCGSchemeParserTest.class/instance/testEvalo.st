@@ -11,5 +11,5 @@ self skip.
 						cons:
 							{#N.
 							#(quote 42)} asConsR cons)
-				o: x ] asGoal run
+				o: x ] asGoal runList
 		equals: (42 cons: 42 cons) cons cons

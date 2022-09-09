@@ -13,5 +13,5 @@ testParse4321
 							((((4 cons: #\ cons: (1 cons: x) cons) cons: #\ cons: (2 cons: y) cons) cons: #\ cons: (3 cons: z) cons) cons: (x cons: (y cons: (z cons: 4 cons) cons) cons))
 								cons)
 				parseOut: pOut
-				strOut: Cons empty ] ] asGoal run
+				strOut: Cons empty ] ] asGoal runList
 		equals: #(#(#(4 1 #(2 #(3 4))))) asConsR.	"(1 (2 (3 4)))"

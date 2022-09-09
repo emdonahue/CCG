@@ -8,5 +8,5 @@ testParse321
 				parseIn: ((1 cons: #/ cons: (3 cons: x) cons) cons: (1 cons: x cons))
 				strIn: ((2 cons: 2) cons: ((3 cons: #\ cons: (2 cons: y) cons) cons: (y cons: 3 cons)) cons)
 				parseOut: pOut
-				strOut: Cons empty ] ] asGoal run
+				strOut: Cons empty ] ] asGoal runList
 		equals: #(#(#(1 1 #(2 3)))) asConsR.	"(1 (2 3))"
